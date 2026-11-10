@@ -1,0 +1,19 @@
+{
+  "name": "Looq",
+  "url": "https://parcse.com/looq",
+  "platforms": ["macOS"],
+  "category": "utilities",
+  "discount": "10% off",
+  "description": "Press Space in Finder to preview Markdown with math and Mermaid, Jupyter notebooks, LaTeX, source code, SQLite databases, archives, 3D models, and maps.",
+  "code": "PARCSEBLACKFRIDAY",
+  "prices": [
+    { "plan": "Personal (3 Macs)", "before": 15, "after": 13.50 },
+    { "plan": "Team (10 Macs)", "before": 35, "after": 31.50 }
+  ],
+  "terms": "One-time purchase.",
+  "starts": "2026-11-10",
+  "ends": "2026-12-01",
+  "maker": "Parcse",
+  "makerUrl": "https://parcse.com",
+  "icon": "https://parcse.com/s/looq/71ea875d62.png"
+}
