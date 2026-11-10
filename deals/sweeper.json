@@ -1,0 +1,18 @@
+{
+  "name": "Sweeper",
+  "url": "https://parcse.com/sweeper",
+  "platforms": ["macOS"],
+  "category": "utilities",
+  "discount": "10% off",
+  "description": "Removes Mac apps together with the files they leave behind, shows every file before it goes, and keeps what it clears in quarantine so a mistake can be undone.",
+  "code": "PARCSEBLACKFRIDAY",
+  "prices": [
+    { "plan": "Personal (3 Macs)", "before": 10, "after": 9 }
+  ],
+  "terms": "One-time purchase.",
+  "starts": "2026-11-10",
+  "ends": "2026-12-01",
+  "maker": "Parcse",
+  "makerUrl": "https://parcse.com",
+  "icon": "https://parcse.com/s/sweeper/icon-shop.png"
+}
