@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T02:19:51.354Z",
+  "updatedAt": "2026-11-10T05:50:02.108Z",
   "categories": [
     {
       "id": "ai",
@@ -1270,6 +1270,39 @@
       "terms": "Automatically applied on the Mac App Store; one-time Lifetime unlock (monthly and yearly plans not discounted); 2026-11-20 to 2026-12-01"
     },
     {
+      "id": "robomori",
+      "name": "Robomori",
+      "url": "https://robomori.com/pricing?ref=mac-black-friday",
+      "platforms": [
+        "macOS"
+      ],
+      "category": "developer",
+      "description": "Run Android emulators and your own Android devices outside Android Studio. Reproduce any bug report in a few clicks. For Mac, Windows and Linux.",
+      "discount": "60% off",
+      "code": "BLACKFRIDAY2026",
+      "prices": [
+        {
+          "plan": "Basic",
+          "before": 29,
+          "after": 11.6
+        },
+        {
+          "plan": "Personal",
+          "before": 39,
+          "after": 15.6
+        },
+        {
+          "plan": "Team, per developer",
+          "before": 24,
+          "after": 9.6
+        }
+      ],
+      "terms": "One-time purchase with a year of updates. Enter the code at checkout.",
+      "ends": "2026-12-01",
+      "maker": "Alex Styl",
+      "makerUrl": "https://x.com/alexstyl"
+    },
+    {
       "id": "runestone",
       "name": "Runestone",
       "url": "https://apps.apple.com/us/app/runestone-text-editor/id1548193893",
@@ -1607,6 +1640,40 @@
       "ends": "2026-12-03",
       "starts": "2026-11-16",
       "terms": "BF2026; 2026-11-16 to 2026-12-03"
+    },
+    {
+      "id": "ubidrop",
+      "name": "Ubidrop",
+      "url": "https://www.ubidrop.com/pricing?ref=mac-black-friday",
+      "platforms": [
+        "macOS",
+        "iOS"
+      ],
+      "category": "utilities",
+      "description": "AirDrop between Mac, Android and iPhone. Send files of any size in seconds over local Wi-Fi, never through the internet. Apps for Mac, iPhone and Android.",
+      "discount": "60% off",
+      "code": "BLACKFRIDAY2026",
+      "prices": [
+        {
+          "plan": "1 Mac",
+          "before": 29,
+          "after": 11.6
+        },
+        {
+          "plan": "2 Macs",
+          "before": 49,
+          "after": 19.6
+        },
+        {
+          "plan": "5 Macs",
+          "before": 99,
+          "after": 39.6
+        }
+      ],
+      "terms": "One-time purchase with a year of updates. Enter the code at checkout.",
+      "ends": "2026-12-01",
+      "maker": "Alex Styl",
+      "makerUrl": "https://x.com/alexstyl"
     },
     {
       "id": "umami-manager",
