@@ -1,0 +1,25 @@
+name: Thank on merge
+# After a deal pull request is merged, thank its author and ask for a star, once per pull request.
+# pull_request_target runs from the base branch, so it can comment on pull requests from forks. No code from the pull request runs.
+on:
+  pull_request_target:
+    types: [closed]
+permissions:
+  pull-requests: write
+  issues: write
+jobs:
+  thank:
+    if: github.event.pull_request.merged == true && github.event.pull_request.user.login != github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: |
+          if gh api "repos/$REPO/issues/$PR/comments" --paginate --jq '.[].body' | grep -q 'a ⭐ on the repo'; then
+            echo "Already asked on #$PR"
+            exit 0
+          fi
+          gh pr comment "$PR" -R "$REPO" --body "Thanks @$AUTHOR, merged! If you have a second, a ⭐ on the repo helps it trend on GitHub during Black Friday, so more people find your deal."
