@@ -1,0 +1,33 @@
+{
+  "name": "Ubidrop",
+  "url": "https://www.ubidrop.com/pricing?ref=mac-black-friday",
+  "platforms": [
+    "macOS",
+    "iOS"
+  ],
+  "category": "utilities",
+  "description": "AirDrop between Mac, Android and iPhone. Send files of any size in seconds over local Wi-Fi, never through the internet. Apps for Mac, iPhone and Android.",
+  "discount": "60% off",
+  "code": "BLACKFRIDAY2026",
+  "prices": [
+    {
+      "plan": "1 Mac",
+      "before": 29,
+      "after": 11.6
+    },
+    {
+      "plan": "2 Macs",
+      "before": 49,
+      "after": 19.6
+    },
+    {
+      "plan": "5 Macs",
+      "before": 99,
+      "after": 39.6
+    }
+  ],
+  "terms": "One-time purchase with a year of updates. Enter the code at checkout.",
+  "ends": "2026-12-01",
+  "maker": "Alex Styl",
+  "makerUrl": "https://x.com/alexstyl"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Robomori",
+  "url": "https://robomori.com/pricing?ref=mac-black-friday",
+  "platforms": [
+    "macOS"
+  ],
+  "category": "developer",
+  "description": "Run Android emulators and your own Android devices outside Android Studio. Reproduce any bug report in a few clicks. For Mac, Windows and Linux.",
+  "discount": "60% off",
+  "code": "BLACKFRIDAY2026",
+  "prices": [
+    {
+      "plan": "Basic",
+      "before": 29,
+      "after": 11.6
+    },
+    {
+      "plan": "Personal",
+      "before": 39,
+      "after": 15.6
+    },
+    {
+      "plan": "Team, per developer",
+      "before": 24,
+      "after": 9.6
+    }
+  ],
+  "terms": "One-time purchase with a year of updates. Enter the code at checkout.",
+  "ends": "2026-12-01",
+  "maker": "Alex Styl",
+  "makerUrl": "https://x.com/alexstyl"
+}
