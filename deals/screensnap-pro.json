@@ -1,0 +1,23 @@
+{
+  "name": "ScreenSnap Pro",
+  "url": "https://www.screensnap.pro/pricing",
+  "platforms": [
+    "macOS"
+  ],
+  "category": "productivity",
+  "description": "All-in-one screenshot and screen recording app: 17 annotation tools, scrolling capture, a built-in video editor, OCR and cloud share links.",
+  "discount": "50% off",
+  "code": "BLACKFRIDAY",
+  "prices": [
+    {
+      "plan": "Lifetime",
+      "before": 39,
+      "after": 19.5
+    }
+  ],
+  "terms": "One-time purchase; one license covers 2 computers (Mac or Windows). Enter the code at checkout.",
+  "starts": "2026-11-10",
+  "ends": "2026-11-30",
+  "makerUrl": "https://www.screensnap.pro",
+  "icon": "https://www.screensnap.pro/images/icon.png"
+}
