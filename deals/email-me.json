@@ -1,0 +1,14 @@
+{
+  "name": "Email Me",
+  "url": "https://www.emailmeapp.net/",
+  "platforms": ["iOS", "iPadOS", "macOS", "watchOS", "visionOS"],
+  "category": "productivity",
+  "description": "Note-to-self app: send notes, voice memos with AI transcription, images and links to your email inbox in one tap.",
+  "discount": "23% off yearly",
+  "prices": [{ "plan": "Yearly Premium", "before": 12.99, "after": 9.99 }],
+  "terms": "No code needed; the lower yearly price applies automatically in the app during the sale.",
+  "starts": "2026-11-27",
+  "ends": "2026-12-01",
+  "maker": "Manuel Escrig",
+  "makerUrl": "https://www.emailmeapp.net/"
+}
