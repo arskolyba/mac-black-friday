@@ -1,0 +1,14 @@
+{
+  "name": "Photo Booth App",
+  "url": "https://apps.apple.com/us/app/photo-booth-app-for-events/id6758273611",
+  "platforms": ["iOS", "iPadOS", "macOS", "visionOS", "watchOS"],
+  "category": "design",
+  "description": "Turns your iPhone or iPad into an event photo booth with custom templates, guest photo sharing and AirPrint printing.",
+  "discount": "50% off yearly",
+  "prices": [{ "plan": "Yearly Premium", "before": 99.99, "after": 49.99 }],
+  "terms": "No code needed; the lower yearly price applies automatically in the app during the sale.",
+  "starts": "2026-11-27",
+  "ends": "2026-12-01",
+  "maker": "Manuel Escrig",
+  "makerUrl": "https://thephotoboothapp.com/"
+}
