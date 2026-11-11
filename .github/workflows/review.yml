@@ -1,5 +1,5 @@
 name: Review deal
-# pull_request_target can comment on pull requests from forks. It checks out the base branch only and never runs
+# pull_request_target can comment on pull requests from forks. It checks out the latest base branch only (so re-runs use the current bot) and never runs
 # code from the pull request; scripts/review.mjs reads the deal file through the API as data.
 on:
   pull_request_target:
@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.base.sha }}
+          ref: ${{ github.event.pull_request.base.ref }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
