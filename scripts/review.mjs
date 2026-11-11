@@ -1,4 +1,5 @@
-// Reviews one pull request (up to 5 deal files) and leaves one comment on it, plus a "ready" or "needs changes" label.
+// Reviews one pull request (up to 5 deal files) and leaves one comment on it, plus a "ready", "check by hand" or
+// "needs changes" label. "check by hand" means the files pass but the bot couldn't confirm the deal on its page.
 // Runs from the base branch (pull_request_target), so it never runs code from the pull request: the deal file is
 // fetched through the GitHub API and only parsed as JSON.
 import { readCategories, readDeals, validateDeal } from './lib.mjs'
@@ -11,7 +12,11 @@ if (PR_AUTHOR && PR_AUTHOR === process.env.GITHUB_REPOSITORY_OWNER) {
   console.log(`Pull request by the maintainer @${PR_AUTHOR}: no review.`)
   process.exit(0)
 }
-const LABELS = { ready: { name: 'ready', color: '2da44e' }, changes: { name: 'needs changes', color: 'd93f0b' } }
+const LABELS = {
+  ready: { name: 'ready', color: '2da44e' },
+  check: { name: 'check by hand', color: 'd4a72c' },
+  changes: { name: 'needs changes', color: 'd93f0b' },
+}
 
 async function gh(path, options = {}) {
   const response = await fetch(`https://api.github.com/repos/${GITHUB_REPOSITORY}${path}`, {
@@ -69,7 +74,8 @@ async function mergedDealCount(author) {
   return count
 }
 
-/** Checks one deal file. Returns its name, its problems and notes about its page. */
+/** Checks one deal file. Returns its name, its problems, and notes about its page; a `warn` note means the deal
+ *  couldn't be confirmed on its page and a maintainer should look. */
 async function reviewDeal(file, existing, categoryIds) {
   const problems = []
   const notes = []
@@ -91,12 +97,12 @@ async function reviewDeal(file, existing, categoryIds) {
   if (deal.url) {
     const page = await checkPage(deal)
     const startsLater = deal.starts && deal.starts > new Date().toISOString().slice(0, 10)
-    if (!page.reachable) notes.push(`couldn't check the page: ${page.note}`)
-    else if (startsLater) notes.push(`starts ${deal.starts}; the page can show the sale price from then`)
+    if (!page.reachable) notes.push({ text: `couldn't open the page (${page.note})`, warn: true })
+    else if (startsLater) notes.push({ text: `starts ${deal.starts}; the page can show the sale price from then` })
     else {
-      if (!page.sale) notes.push("the page doesn't mention Black Friday yet")
-      if (deal.prices?.length && !page.priceShown) notes.push("the sale price isn't on the page yet, or it's drawn by JavaScript")
-      if (page.codeShown === false) notes.push(`the code \`${deal.code}\` isn't on the page (fine if it's applied at checkout)`)
+      if (!page.sale) notes.push({ text: "the page doesn't mention Black Friday yet", warn: true })
+      if (deal.prices?.length && !page.priceShown) notes.push({ text: "the sale price isn't on the page yet, or it's drawn by JavaScript", warn: true })
+      if (page.codeShown === false) notes.push({ text: `the code \`${deal.code}\` isn't on the page (fine if it's applied at checkout)` })
     }
   }
   return { name: deal.name || file, problems, notes }
@@ -126,18 +132,35 @@ async function main() {
     for (const f of dealFiles) results.push(await reviewDeal(f.filename.replace(/^deals\//, ''), existing, categoryIds))
   }
 
-  const ready = problems.length === 0 && results.every((r) => r.problems.length === 0)
+  const passes = problems.length === 0 && results.every((r) => r.problems.length === 0)
+  const unconfirmed = passes && results.some((r) => r.notes.some((n) => n.warn))
+  const ready = passes && !unconfirmed
+  const thanks = `Thanks${PR_AUTHOR ? ', @' + PR_AUTHOR : ''}!`
   const lines = [MARKER]
-  lines.push(ready ? `Thanks${PR_AUTHOR ? ', @' + PR_AUTHOR : ''}! Everything passes the checks.` : 'Thanks for adding your deal! A few things to fix first:')
+  lines.push(
+    ready
+      ? `${thanks} Everything passes the checks.`
+      : unconfirmed
+        ? `${thanks} The deal file passes the checks, but I couldn't confirm the deal on your page, so a maintainer will check it by hand.`
+        : 'Thanks for adding your deal! A few things to fix first:'
+  )
   if (problems.length) lines.push('', ...problems.map((p) => `- ${p}`))
   if (results.length) {
     lines.push('')
     for (const r of results) {
-      lines.push(`- ${r.problems.length ? '❌' : '✅'} **${r.name}**${r.problems.length ? ': ' + r.problems.join('; ') : ''}`)
-      for (const n of r.notes) lines.push(`  - ${n}`)
+      const icon = r.problems.length ? '❌' : r.notes.some((n) => n.warn) ? '⚠️' : '✅'
+      lines.push(`- ${icon} **${r.name}**${r.problems.length ? ': ' + r.problems.join('; ') : ''}`)
+      for (const n of r.notes) lines.push(`  - ${n.text}`)
     }
   }
-  lines.push('', ready ? 'A maintainer will merge it soon.' : `Push a fix to this branch and I'll check again. Here are the [rules](https://github.com/${GITHUB_REPOSITORY}/blob/main/RULES.md).`)
+  lines.push(
+    '',
+    passes
+      ? ready
+        ? 'A maintainer will merge it soon.'
+        : "If your page shows the deal only after it starts or blocks bots, there's nothing to fix."
+      : `Push a fix to this branch and I'll check again. Here are the [rules](https://github.com/${GITHUB_REPOSITORY}/blob/main/RULES.md).`
+  )
   const body = lines.join('\n')
 
   const comments = await gh(`/issues/${PR_NUMBER}/comments?per_page=100`)
@@ -146,13 +169,15 @@ async function main() {
   else await gh(`/issues/${PR_NUMBER}/comments`, { method: 'POST', body: JSON.stringify({ body }) })
 
   for (const label of Object.values(LABELS)) await gh('/labels', { method: 'POST', body: JSON.stringify(label) })
-  const add = ready ? LABELS.ready.name : LABELS.changes.name
-  const remove = ready ? LABELS.changes.name : LABELS.ready.name
-  await gh(`/issues/${PR_NUMBER}/labels/${encodeURIComponent(remove)}`, { method: 'DELETE' })
+  const add = (ready ? LABELS.ready : unconfirmed ? LABELS.check : LABELS.changes).name
+  for (const label of Object.values(LABELS))
+    if (label.name !== add) await gh(`/issues/${PR_NUMBER}/labels/${encodeURIComponent(label.name)}`, { method: 'DELETE' })
   await gh(`/issues/${PR_NUMBER}/labels`, { method: 'POST', body: JSON.stringify({ labels: [add] }) })
 
   console.log(body)
-  if (!ready) process.exit(1)
+  // A deal that couldn't be confirmed on its page isn't the maker's fault, so the check stays green; the label and the
+  // comment say a maintainer looks by hand.
+  if (!passes) process.exit(1)
 }
 
 main().catch((error) => {
