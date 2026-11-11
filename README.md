@@ -85,6 +85,7 @@ Hi! I build native Mac and iOS apps and maintain this list. Follow me on [X](htt
 | App | Platforms | What it does | Deal |
 | --- | --- | --- | --- |
 | [KTool](https://ktool.io/pricing#lifetime) | macOS, iOS | Send articles, newsletters and RSS feeds to your Kindle, from your browser or your phone. | **Lifetime ~~$179~~ $149** · Everything in Platinum, pay once · until Dec 1 |
+| [Book Reading Habit](https://bookreadinghabit.com/blog/black-friday-2026-lifetime-pro) | iOS, iPadOS, macOS | Reading tracker for iPhone, iPad and Mac. Time your reading sessions, keep a streak going and save notes on paper books, ebooks or audiobooks. | **Lifetime Pro ~~$44.99~~ $19.99** · One-time purchase, no subscription. No code needed, the lower price is already in the app. US price, other countries get 50 to 60% off · until Nov 30 |
 
 ### Design and Photo
 
