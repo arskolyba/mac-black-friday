@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T11:22:00.251Z",
+  "updatedAt": "2026-11-11T17:09:52.660Z",
   "categories": [
     {
       "id": "ai",
@@ -512,6 +512,20 @@
       "ends": "2026-12-03",
       "starts": "2026-11-04",
       "terms": "BF26; 2026-11-04 to 2026-12-03"
+    },
+    {
+      "id": "displaybuddy",
+      "name": "DisplayBuddy",
+      "url": "https://displaybuddy.app/pricing",
+      "platforms": [
+        "macOS"
+      ],
+      "category": "utilities",
+      "discount": "33% off",
+      "description": "Control brightness, contrast, volume, inputs, and presets for external monitors directly from your Mac.",
+      "code": "BLACKFRIDAY26",
+      "starts": "2026-11-16",
+      "ends": "2026-12-15"
     },
     {
       "id": "dockflow",
