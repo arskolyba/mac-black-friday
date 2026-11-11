@@ -1,0 +1,14 @@
+{
+  "name": "Our Family Album",
+  "url": "https://apps.apple.com/us/app/our-family-album/id6790241302",
+  "platforms": ["iOS", "iPadOS", "macOS", "visionOS"],
+  "category": "design",
+  "description": "Private family photo sharing: invite grandparents to the app or share read-only browser links, no account needed for viewers.",
+  "discount": "50% off yearly",
+  "prices": [{ "plan": "Yearly Premium", "before": 49.99, "after": 24.99 }],
+  "terms": "No code needed; the lower yearly price applies automatically in the app during the sale.",
+  "starts": "2026-11-27",
+  "ends": "2026-12-01",
+  "maker": "Manuel Escrig",
+  "makerUrl": "https://ourfamilyalbum.com/"
+}

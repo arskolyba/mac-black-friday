@@ -1,0 +1,14 @@
+{
+  "name": "Digital Photo Frame App",
+  "url": "https://digitalphotoframeapp.com/",
+  "platforms": ["iOS", "iPadOS", "macOS", "visionOS"],
+  "category": "design",
+  "description": "Turns your iPhone, iPad, Mac or Apple TV into a digital photo frame, with slideshows from iCloud shared albums and Google Photos.",
+  "discount": "50% off yearly",
+  "prices": [{ "plan": "Yearly Premium", "before": 19.99, "after": 9.99 }],
+  "terms": "No code needed; the lower yearly price applies automatically in the app during the sale.",
+  "starts": "2026-11-27",
+  "ends": "2026-12-01",
+  "maker": "Manuel Escrig",
+  "makerUrl": "https://digitalphotoframeapp.com/"
+}
