@@ -179,4 +179,10 @@ Hi! I build native Mac and iOS apps and maintain this list. Follow me on [X](htt
 | --- | --- | --- | --- |
 | [Wavy Road](https://apps.apple.com/dk/app/wavy-road-endless-driving/id6804942333) | iOS | Endless driving game for iPhone where you steer the road and dodge obstacles. | **50% off** · Automatically applied to in-app purchases. No code needed. November 24–30, 2026 · until Nov 30 |
 
+### Other
+
+| App | Platforms | What it does | Deal |
+| --- | --- | --- | --- |
+| [Comic Weather](https://comicweather.app/black-friday?ref=boltai) | iOS | Weather app for iPhone that turns your forecast into a comic book page: Apple Weather forecasts painted as comic panels in four skins, with three narrators. | **67% off ($2.99 → $0.99)** · Paid app (one-time purchase) ~~$2.99~~ $0.99 · US price; local prices vary. Paid app, no in-app purchases or subscription. No code needed. $2.99 since launch. iPhone, iOS 18+ · until Nov 30 |
+
 <!-- deals:end -->
