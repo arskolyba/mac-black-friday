@@ -1,0 +1,24 @@
+{
+  "name": "Book Reading Habit",
+  "url": "https://bookreadinghabit.com/blog/black-friday-2026-lifetime-pro",
+  "platforms": [
+    "iOS",
+    "iPadOS",
+    "macOS"
+  ],
+  "category": "reading",
+  "description": "Reading tracker for iPhone, iPad and Mac. Time your reading sessions, keep a streak going and save notes on paper books, ebooks or audiobooks.",
+  "discount": "Lifetime Pro $19.99",
+  "prices": [
+    {
+      "plan": "Lifetime Pro",
+      "before": 44.99,
+      "after": 19.99
+    }
+  ],
+  "terms": "One-time purchase, no subscription. No code needed, the lower price is already in the app. US price, other countries get 50 to 60% off.",
+  "starts": "2026-11-10",
+  "ends": "2026-11-30",
+  "maker": "Book Reading Habit",
+  "makerUrl": "https://bookreadinghabit.com"
+}
