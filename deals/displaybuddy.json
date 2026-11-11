@@ -1,0 +1,11 @@
+{
+  "name": "DisplayBuddy",
+  "url": "https://displaybuddy.app/pricing",
+  "platforms": ["macOS"],
+  "category": "utilities",
+  "discount": "33% off",
+  "description": "Control brightness, contrast, volume, inputs, and presets for external monitors directly from your Mac.",
+  "code": "BLACKFRIDAY26",
+  "starts": "2026-11-16",
+  "ends": "2026-12-15"
+}
