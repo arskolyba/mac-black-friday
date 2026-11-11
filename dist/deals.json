@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T02:10:28.866Z",
+  "updatedAt": "2026-11-11T03:23:45.232Z",
   "categories": [
     {
       "id": "ai",
@@ -988,6 +988,35 @@
       "ends": "2026-12-01",
       "starts": "2026-11-23",
       "terms": "BLACKFRIDAY26; one-time purchase, license covers 3 Macs; 2026-11-23 to 2026-12-01 (UTC)"
+    },
+    {
+      "id": "mailflare",
+      "name": "Mailflare",
+      "url": "https://mailflare.co/#pricing",
+      "platforms": [
+        "macOS"
+      ],
+      "category": "productivity",
+      "discount": "40% off",
+      "description": "Fast Mac mail app for Mailflare, Gmail, Outlook and iCloud, with offline mail and an AI assistant.",
+      "code": "MACBF2026",
+      "prices": [
+        {
+          "plan": "Pro",
+          "before": 29,
+          "after": 17.4
+        },
+        {
+          "plan": "Team",
+          "before": 249,
+          "after": 149.4
+        }
+      ],
+      "starts": "2026-11-20",
+      "ends": "2026-12-02",
+      "maker": "Hieu Nguyen",
+      "makerUrl": "https://github.com/hieunc229",
+      "icon": "https://mailflare.co/icon-192.png"
     },
     {
       "id": "margin",
