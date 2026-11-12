@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T23:10:34.264Z",
+  "updatedAt": "2026-11-12T01:22:53.356Z",
   "categories": [
     {
       "id": "ai",
@@ -512,6 +512,32 @@
       "ends": "2026-12-03",
       "starts": "2026-11-04",
       "terms": "BF26; 2026-11-04 to 2026-12-03"
+    },
+    {
+      "id": "digital-photo-frame-app",
+      "name": "Digital Photo Frame App",
+      "url": "https://digitalphotoframeapp.com/",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "macOS",
+        "visionOS"
+      ],
+      "category": "design",
+      "description": "Turns your iPhone, iPad, Mac or Apple TV into a digital photo frame, with slideshows from iCloud shared albums and Google Photos.",
+      "discount": "50% off yearly",
+      "prices": [
+        {
+          "plan": "Yearly Premium",
+          "before": 19.99,
+          "after": 9.99
+        }
+      ],
+      "terms": "No code needed; the lower yearly price applies automatically in the app during the sale.",
+      "starts": "2026-11-27",
+      "ends": "2026-12-01",
+      "maker": "Manuel Escrig",
+      "makerUrl": "https://digitalphotoframeapp.com/"
     },
     {
       "id": "displaybuddy",
@@ -1171,6 +1197,32 @@
       "terms": "Automatically applied; one-time purchase for 2 Macs, free trial; 2026-11-07 to 2026-12-01"
     },
     {
+      "id": "our-family-album",
+      "name": "Our Family Album",
+      "url": "https://apps.apple.com/us/app/our-family-album/id6790241302",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "macOS",
+        "visionOS"
+      ],
+      "category": "design",
+      "description": "Private family photo sharing: invite grandparents to the app or share read-only browser links, no account needed for viewers.",
+      "discount": "50% off yearly",
+      "prices": [
+        {
+          "plan": "Yearly Premium",
+          "before": 49.99,
+          "after": 24.99
+        }
+      ],
+      "terms": "No code needed; the lower yearly price applies automatically in the app during the sale.",
+      "starts": "2026-11-27",
+      "ends": "2026-12-01",
+      "maker": "Manuel Escrig",
+      "makerUrl": "https://ourfamilyalbum.com/"
+    },
+    {
       "id": "overcal",
       "name": "Overcal",
       "url": "https://indiegoodies.com/overcal",
@@ -1291,6 +1343,33 @@
       "ends": "2026-12-01",
       "starts": "2026-11-27",
       "terms": "Automatically applied; lifetime purchase on the Mac App Store, $49.99 → $34.99; 2026-11-27 to 2026-12-01"
+    },
+    {
+      "id": "photo-booth-app",
+      "name": "Photo Booth App",
+      "url": "https://apps.apple.com/us/app/photo-booth-app-for-events/id6758273611",
+      "platforms": [
+        "iOS",
+        "iPadOS",
+        "macOS",
+        "visionOS",
+        "watchOS"
+      ],
+      "category": "design",
+      "description": "Turns your iPhone or iPad into an event photo booth with custom templates, guest photo sharing and AirPrint printing.",
+      "discount": "50% off yearly",
+      "prices": [
+        {
+          "plan": "Yearly Premium",
+          "before": 99.99,
+          "after": 49.99
+        }
+      ],
+      "terms": "No code needed; the lower yearly price applies automatically in the app during the sale.",
+      "starts": "2026-11-27",
+      "ends": "2026-12-01",
+      "maker": "Manuel Escrig",
+      "makerUrl": "https://thephotoboothapp.com/"
     },
     {
       "id": "picmal",
