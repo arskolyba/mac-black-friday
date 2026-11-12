@@ -81,6 +81,7 @@ Hi! I build native Mac and iOS apps and maintain this list. Follow me on [X](htt
 | App | Platforms | What it does | Deal |
 | --- | --- | --- | --- |
 | [Everlog Journal](https://apps.apple.com/app/everlog-journal/id1519935634) | iOS, iPadOS, macOS | Private journal for iPhone, iPad and Mac: Markdown entries, photos, places, moods and workouts, synced through iCloud | **50% off Premium** · Lifetime ~~$59.99~~ $29.99 · Yearly (first year) ~~$29.99~~ $14.99 · No code needed: the offer appears in the app for anyone not on Premium yet. The yearly renews at $29.99. US prices; local prices vary · until Dec 1 |
+| [Tree Outliner](https://noteifyapp.com/special-offers/) | macOS | Text outliner for nonlinear thinking: the same notes as a list or as a sideways tree. | **30% off** · code **MACPLUSBLACKFRIDAY26** · Standard ~~$14.99~~ $10.49 · Lifetime ~~$29.99~~ $20.99 · MACPLUSBLACKFRIDAY26; 2026-11-01 to 2026-11-30 · until Nov 30 |
 
 ### Reading and Research
 

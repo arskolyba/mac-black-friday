@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T14:03:10.770Z",
+  "updatedAt": "2026-11-12T14:03:52.916Z",
   "categories": [
     {
       "id": "ai",
@@ -1946,6 +1946,33 @@
       "ends": "2026-12-03",
       "starts": "2026-11-16",
       "terms": "BF2026; 2026-11-16 to 2026-12-03"
+    },
+    {
+      "id": "tree-outliner",
+      "name": "Tree Outliner",
+      "url": "https://noteifyapp.com/special-offers/",
+      "platforms": [
+        "macOS"
+      ],
+      "category": "writing",
+      "description": "Text outliner for nonlinear thinking: the same notes as a list or as a sideways tree.",
+      "discount": "30% off",
+      "code": "MACPLUSBLACKFRIDAY26",
+      "prices": [
+        {
+          "plan": "Standard",
+          "before": 14.99,
+          "after": 10.49
+        },
+        {
+          "plan": "Lifetime",
+          "before": 29.99,
+          "after": 20.99
+        }
+      ],
+      "ends": "2026-11-30",
+      "starts": "2026-11-01",
+      "terms": "MACPLUSBLACKFRIDAY26; 2026-11-01 to 2026-11-30"
     },
     {
       "id": "ubidrop",
