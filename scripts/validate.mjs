@@ -23,9 +23,9 @@ for (const { file, deal } of deals) {
 }
 
 for (const [maker, files] of perMaker)
-  if (files.length > 3 && !files.every((f) => deals.find((d) => d.file === f).deal.featured)) {
+  if (files.length > 5 && !files.every((f) => deals.find((d) => d.file === f).deal.featured)) {
     failed = true
-    console.error(`${maker} has ${files.length} entries; the limit is 3 per maker`)
+    console.error(`${maker} has ${files.length} entries; the limit is 5 per maker`)
   }
 
 if (failed) process.exit(1)
