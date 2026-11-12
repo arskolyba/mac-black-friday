@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T01:22:53.356Z",
+  "updatedAt": "2026-11-12T14:03:10.770Z",
   "categories": [
     {
       "id": "ai",
@@ -452,6 +452,35 @@
       ],
       "terms": "No code needed; pay once, runs on your computer; free version exports 15 seconds with a small mark; 30-day refund; sale ends end of 30 November 2026, US time",
       "ends": "2026-11-30"
+    },
+    {
+      "id": "daily-time-tracking",
+      "name": "Daily Time Tracking",
+      "url": "https://dailytimetracking.com/?utm_source=bf2026-boltai",
+      "platforms": [
+        "macOS"
+      ],
+      "category": "productivity",
+      "discount": "Up to 30% off",
+      "description": "Tracks time by asking what you're doing. No timers or activity monitoring. CSV, JSON & PDF exports; API, MCP, Zapier & AppleScript.",
+      "code": "DAILYBF2026",
+      "prices": [
+        {
+          "plan": "Annual — one upcoming year",
+          "before": 39.99,
+          "after": 29.99
+        },
+        {
+          "plan": "Lifetime — one-time purchase",
+          "before": 99.99,
+          "after": 69.99
+        }
+      ],
+      "terms": "Code: Annual only, one upcoming year, then standard renewal. Lifetime: no code. Existing subscribers: compare your rate. Local prices vary.",
+      "starts": "2026-11-23",
+      "ends": "2026-11-30",
+      "maker": "Niels Mouthaan",
+      "makerUrl": "https://dailytimetracking.com/"
     },
     {
       "id": "deckloud",
