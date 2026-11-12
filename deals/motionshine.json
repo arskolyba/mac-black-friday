@@ -1,0 +1,18 @@
+{
+  "name": "MotionShine",
+  "url": "https://motionshine.com/#pricing",
+  "platforms": ["macOS"],
+  "category": "audio-video",
+  "discount": "50% off all paid plans",
+  "description": "Mac screen recorder that adds auto zoom, a smooth cursor, backgrounds and captions for you, with a built-in editor.",
+  "code": "BF50",
+  "prices": [
+    { "plan": "Pro Forever", "before": 99, "after": 49.5 },
+    { "plan": "Pro", "before": 49, "after": 24.5 },
+    { "plan": "Agency", "before": 179, "after": 89.5 }
+  ],
+  "starts": "2026-11-12",
+  "ends": "2026-12-05",
+  "terms": "One-time purchase, direct from the website. 30-day money-back guarantee.",
+  "makerUrl": "https://motionshine.com"
+}
