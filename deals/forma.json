@@ -1,0 +1,15 @@
+{
+  "name": "Forma",
+  "url": "https://useforma.app",
+  "platforms": ["macOS"],
+  "category": "productivity",
+  "description": "Free-form canvas for daily tasks and project planning: markdown cards, checklists and a marker",
+  "discount": "47% off Lifetime Pro",
+  "code": "BLACKFRIDAY50",
+  "prices": [{ "plan": "Lifetime Pro", "before": 14.99, "after": 7.99 }],
+  "terms": "Free app with a one-time Pro upgrade. Redeem the code in the app via Have a code",
+  "starts": "2026-11-20",
+  "ends": "2026-12-01",
+  "maker": "Arsen Kolyba",
+  "makerUrl": "https://www.arsenkolyba.com"
+}
